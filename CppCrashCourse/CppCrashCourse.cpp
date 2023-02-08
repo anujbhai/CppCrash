@@ -1,6 +1,9 @@
 #include <iostream>
 using namespace std;
 
+// ---------- enums ----------
+enum EyeColor {Brown, Blue, Green, Gray, Hazel, Other};
+
 int main()
 {
     // data types | variables declaration
@@ -57,9 +60,31 @@ int main()
     // array
     string colors[10] = {"red", "green", "blue"};
 
-    cout << colors[0];
-    cin >> colors[0];
-    cout << colors[0];
+    //cout << colors[0];
+    //cin >> colors[0];
+    //cout << colors[0];
+
+    // ----------- Switch case ----------
+    EyeColor eyeColor = Brown;
+
+    switch (99)
+    {
+	case Brown: cout << "80% of people have Brown eyes." << endl;
+		break;
+
+    case Blue: cout << "10% of people have Blue eyes." << endl;
+		break;
+
+    case Green: cout << "2% of people have Green eyes." << endl;
+		break;
+
+    case Gray: cout << "1% of people have Gray eyes." << endl;
+		break;
+
+    case Other: cout << "7% of people have Other eyes." << endl;
+		break;
+    default: cout << "Not a valid eye color" << endl;
+    }
 
     system("pause>0");
 }
