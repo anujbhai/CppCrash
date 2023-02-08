@@ -2,7 +2,7 @@
 using namespace std;
 
 // ---------- enums ----------
-enum EyeColor {Brown, Blue, Green, Gray, Hazel, Other};
+//enum EyeColor {Brown, Blue, Green, Gray, Hazel, Other};
 
 int main()
 {
@@ -65,25 +65,46 @@ int main()
     //cout << colors[0];
 
     // ----------- Switch case ----------
-    EyeColor eyeColor = Brown;
+    //EyeColor eyeColor = Brown;
 
-    switch (99)
-    {
-	case Brown: cout << "80% of people have Brown eyes." << endl;
-		break;
+ //   switch (99)
+ //   {
+	//case Brown: cout << "80% of people have Brown eyes." << endl;
+	//	break;
 
-    case Blue: cout << "10% of people have Blue eyes." << endl;
-		break;
+ //   case Blue: cout << "10% of people have Blue eyes." << endl;
+	//	break;
 
-    case Green: cout << "2% of people have Green eyes." << endl;
-		break;
+ //   case Green: cout << "2% of people have Green eyes." << endl;
+	//	break;
 
-    case Gray: cout << "1% of people have Gray eyes." << endl;
-		break;
+ //   case Gray: cout << "1% of people have Gray eyes." << endl;
+	//	break;
 
-    case Other: cout << "7% of people have Other eyes." << endl;
-		break;
-    default: cout << "Not a valid eye color" << endl;
+ //   case Other: cout << "7% of people have Other eyes." << endl;
+	//	break;
+ //   default: cout << "Not a valid eye color" << endl;
+    //}
+
+    // ---------- Loops ----------
+    cout << "WHILE:\n";
+    int counter = 1;
+    while (counter <= 10) {
+        //cout << counter << endl;
+        counter++;
+    }
+
+    cout << "DO-WHILE:\n";
+    int doWhileCounter = 1;
+    while (doWhileCounter <= 10) {
+        //cout << doWhileCounter << endl;
+        doWhileCounter++;
+    }
+
+    string animals[5] = { "cat", "dog", "cow", "goat", "bee" };
+
+    for (int i = 0; i < 5; i++) {
+        cout << animals[i] << endl;
     }
 
     system("pause>0");
